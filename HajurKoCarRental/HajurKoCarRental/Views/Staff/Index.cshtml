@@ -1,41 +1,51 @@
 ﻿@using HajurKoCarRental.Areas.Identity.Data;
-    
+
 @model IEnumerable<(HajurKoCarRentalUser User, IList<string> Roles)>
 
-<h1>Staff Members</h1>
+<section class="bg0 p-t-23 p-b-140 mt-5">
+	<div class="row m-b-15">
+		<div class="col-10">
+			<h4 class="ltext-103 cl5 text-dark ">
+				Staff Members
+			</h4>
+		</div>
+		<div class="col-2">
+			<button type="button" class="btn btn-dark" onclick="location.href='@Url.Action("Create")'">ADD STAFF MEMBER</button>
+		</div>
+	</div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Email</th>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Name</th>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Address</th>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Phone Number</th>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Roles</th>
+				<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var staffMember in Model)
+			{
+				<tr>
+					<td class="text-xs font-weight-bold mb-0">@staffMember.User.Email</td>
+					<td class="text-xs font-weight-bold mb-0">@staffMember.User.FullName</td>
+					<td class="text-xs font-weight-bold mb-0">@staffMember.User.Address</td>
+					<td class="text-xs font-weight-bold mb-0">@staffMember.User.PhoneNumber</td>
+					<td class="text-xs font-weight-bold mb-0">
+						@foreach (var role in staffMember.Roles)
+						{
+							<span>@role</span>
+						}
+					</td>
+					<td>
+						<a class="btn btn-dark" role="button" asp-action="Edit" asp asp-route-id="@staffMember.User.Id">Edit</a>
+						<a class="btn btn-dark" role="button" asp-action="Delete" asp-route-id="@staffMember.User.Id">Delete</a>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Email</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Roles</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var staffMember in Model)
-        {
-            <tr>
-                <td>@staffMember.User.Email</td>
-                <td>@staffMember.User.FullName</td>
-                <td>@staffMember.User.Address</td>
-                <td>@staffMember.User.PhoneNumber</td>
-                <td>
-                    @foreach (var role in staffMember.Roles)
-                    {
-                        <span>@role</span>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@staffMember.User.Id">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@staffMember.User.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
 
-<a asp-action="Create" class="btn btn-primary">Add Staff Member</a>
+</section>

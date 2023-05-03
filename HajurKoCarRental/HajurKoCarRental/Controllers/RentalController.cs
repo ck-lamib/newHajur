@@ -154,8 +154,10 @@ namespace HajurKoCarRental.Controllers
                 // Save the driving license file
                 if (model.DrivingLicense != null && model.DrivingLicense.Length > 0)
                 {
+
+
                     string drivingLicenseFileName = Guid.NewGuid().ToString() + Path.GetExtension(model.DrivingLicense.FileName);
-                    string drivingLicenseFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "documents", drivingLicenseFileName);
+                    string drivingLicenseFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "Uploads", drivingLicenseFileName);
 
                     using (var stream = new FileStream(drivingLicenseFilePath, FileMode.Create))
                     {
@@ -166,15 +168,17 @@ namespace HajurKoCarRental.Controllers
                     string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     var user = await _userManager.FindByIdAsync(userId);
                     user.DrivingLicenseFileName = drivingLicenseFileName;
-                    
+                    Console.WriteLine("update");
                     await _userManager.UpdateAsync(user);
+                    user.DrivingLicenseFileName = drivingLicenseFileName;
+                    Console.WriteLine("update");
                 }
 
                 // Save the citizen paper file
                 if (model.CitizenPaper != null && model.CitizenPaper.Length > 0)
                 {
                     string citizenPaperFileName = Guid.NewGuid().ToString() + Path.GetExtension(model.CitizenPaper.FileName);
-                    string citizenPaperFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "documents", citizenPaperFileName);
+                    string citizenPaperFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "Uploads", citizenPaperFileName);
 
                     using (var stream = new FileStream(citizenPaperFilePath, FileMode.Create))
                     {

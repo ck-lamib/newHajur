@@ -1,22 +1,40 @@
 ﻿@model Microsoft.AspNetCore.Identity.IdentityRole
 
-<h2>Delete Role</h2>
 
-<div>
-    <h4>Are you sure you want to delete this role?</h4>
-    <div>
-        <dl class="dl-horizontal">
-            <dt>
-                Role Name
-            </dt>
-            <dd>
-                @Model.Name
-            </dd>
-        </dl>
 
-        <form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
-            <input type="submit" value="Delete" class="btn btn-danger" />
-            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-        </form>
-    </div>
-</div>
+<section class="bg0 p-t-23 p-b-140 mt-5">
+	<div class="container">
+
+		<div class="p-b-10">
+			<h4 class="ltext-103 cl5 text-dark ">
+				Delete Role
+			</h4>
+
+			<hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+            <dl class="dl-horizontal">
+				<dt class=" text-dark ">
+					<b>Role Name :</b>  @Model.Name
+                </dt>
+
+
+				
+
+
+			</dl>
+			<div class="row">
+
+			</div>
+			<p class=" text-dark ">Are you sure you want to delete this?</p>
+			
+			<div>
+
+
+				<form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
+				
+					<input type="submit" value="Delete" class="btn btn-danger" />
+					<a class="btn btn-dark" role="button" asp-action="Index">Cancel</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

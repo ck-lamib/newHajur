@@ -2,7 +2,43 @@
 @model IdentityRole
 
 
-<div class="row">
+<section class="bg0 p-t-23 p-b-130 mt-5">
+    <div class="container">
+
+        <h1 class=" ltext-103 cl5 text-dark">Create Role</h1>
+        <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+        <div class="row card-body">
+            <div class="col-md-4">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label text-dark"></label>
+                        <input asp-for="Name" class="form-control" aria-required="true"  required/>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <input type="submit" value="Save" class="btn btn-dark" />
+                        </div>
+                        <div class="col-9">
+                            <a class="btn btn-dark" role="button" asp-action="Index">Back</a>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+@*<div class="row">
     <div class="col-md-4">
         <form method="post">
             <h2>Create Role</h2>
@@ -19,4 +55,4 @@
             </div>
         </form>
     </div>
-</div>
+</div>*@

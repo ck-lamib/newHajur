@@ -45,7 +45,7 @@
 
 <body>
     <header>
-        <nav class="navbar hover-shadow navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark hover-shadow border-bottom box-shadow mb-3">
+        <nav class="navbar hover-shadow navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark hover-shadow border-bottom box-shadow mb-0">
 
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HajurKoCarRental</a>
@@ -55,54 +55,57 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                       @* <li>
+                        @if (User.IsInRole(UserRoles.Admin) || User.IsInRole(UserRoles.Staff) || User.IsInRole(UserRoles.Customer))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                        }
+                        @* <li>
                             <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px;" asp-area="Identity" asp-page="/Account/Login">LOGIN</a>
                         </li>
                         <li>
                             <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px; margin-left:10px" asp-area="Identity" asp-page="/Account/Register">RESGISTER</a>
                         </li>*@
-                        
+                        @if (User.IsInRole(UserRoles.Admin))
+                        {
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Role" asp-action="Index">Role</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Staff" asp-action="Index">Manage_Staff</a>
+                            </li>
+
+                          
+                        }
 
 
                         @if (User.IsInRole(UserRoles.Admin) || User.IsInRole(UserRoles.Staff))
                         {
+
                             <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="ManageRental" asp-action="Index">Manage Rentals</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Car" asp-action="Index">Manage_Car</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Car" asp-action="Index">Manage Car</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="ManageRental" asp-action="Index">Manage_Rents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Rental" asp-action="RentalHistory">Rental_History</a>
                             </li>
 
                         }
 
-                        @if (User.IsInRole(UserRoles.Admin))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Staff" asp-action="Index">Manage Staff</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Role" asp-action="Index">Role</a>
-                            </li>
+                       
 
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Rental" asp-action="RentalHistory">Rental History</a>
-                            </li>
-
-
-
-
-                        }
                         @if (User.IsInRole(UserRoles.Admin) || User.IsInRole(UserRoles.Staff) || User.IsInRole(UserRoles.Customer))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="CarDamage" asp-action="Index">Car Damage</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="CarDamage" asp-action="Index"> Manage_Car_Damage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Offer" asp-action="Index">Offer</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Offer" asp-action="Index">Manage_Offer</a>
                             </li>
 
                         }
@@ -114,8 +117,8 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="">
+        <main role="main" class="pb-0">
             @RenderBody()
 
             @RenderSection("AddCustomScripts", false)

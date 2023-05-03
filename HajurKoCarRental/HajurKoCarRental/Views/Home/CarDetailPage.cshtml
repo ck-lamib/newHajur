@@ -1,100 +1,86 @@
 ﻿@model HajurKoCarRental.Models.CarInfo
 
 @{
-    ViewData["Title"] = "Car Detail Page";
+    ViewData["Title"] = "Details";
 }
 
 
+<section class="bg0 p-t-23 p-b-140 mt-5">
+   
+
+    <div class="container">
+        <div class="p-b-10">
+            <h4 class="ltext-103 cl5 text-dark ">
+                Details
+            </h4>
+
+            <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+            <dl class="row">
+                <dt class="col-sm-2 text-dark">
+                    Car Image
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    <img src="@Html.DisplayFor(model => model.CarImage)" alt="Car Image" height="200" width="200" />
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarName)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarName)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarBrand)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarBrand)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarModel)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarModel)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarNumber)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarNumber)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.RentPrice)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.RentPrice)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.is_available)
+                </dt>
+                @if (Model.is_available == true)
+                {
+                    <dd class="col-sm-10 text-dark">
+
+                        Available
+                    </dd>
+                }
+                else
+                {
+                    <dd class="col-sm-10 text-dark">
+
+                        Not Available
+                    </dd>
+                }
 
 
-
-    <!-- Product -->
-    <section class="bg0 p-t-23 p-b-140 mt-5">
-        <div class="container">
-            <div class="p-b-10">
-                
-               <div class="row isotope-grid mt-5">
-                    
-                        <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
-                            <!-- Block2 -->
-                            <div class="block2">
-                                <div class="block2-pic hov-img0">
-                                    <img class="product-img" src="@Model.CarImage" alt="IMG-PRODUCT">
-                                    @*<div class="example-overlay">
-                                        @if(car.isAvailable == true){
-                                            if (car.isRented == true)
-                                            {
-                                                <h5>
-                                                    <span class="badge badge-danger my-2 mr-2">Currently Rented</span>
-                                                </h5>
-                                            }
-                                            else
-                                            {
-                                                <h5>
-                                                    <span class="badge badge-warning my-2 mr-2">Currently Available</span>
-                                                </h5>
-                                            }
-                                        }
-                                        
-                                        else
-                                        {
-                                            <h5>
-                                                <span class="badge badge-success my-2 mr-2">Comming Soon</span>
-                                            </h5>
-                                        }
-
-                                    </div>*@
-                                </div>
-
-                                <div class="block2-txt flex-w flex-t p-t-14">
-                                    <div class="block2-txt-child1 flex-col-l ">
-                                        <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                            @Model.CarName
-                                        </a>
-
-                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
-                                    Car Brand: @Html.DisplayFor(modelItem => Model.CarBrand)
-                                        </span>
-
-                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
-                                    Car Model: @Model.CarModel
-                                        </span>
-                                        
-
-                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
-                                    Car Number: @Model.CarNumber
-                                        </span>
-
-                                        <span class="stext-105 cl3">
-                                    Rent Price: NRS. @Model.RentPrice
-                                         </span>
-                                <span class="stext-105 cl3">
-                                   Car Description: NRS. @Model.CarDescription
-                                </span>
-                                <span class="stext-105 cl3">
-                                    Car Description: NRS. @Model.is_available
-                                </span>
-
-                                    </div>
-                                </div>
-                            </div>
-                    @if (Model.is_available)
-                    {
-                        <a href="@Url.Action("Rent", "Rental", new { id = Model.id })" class="btn btn-outline-success">Rent</a>
-
-                    }
-                    else
-                    {
-
-                        <a href="@Url.Action("Rent", "CarRent", new { id = Model.id })" class="btn btn-outline-success" aria-disabled="true">Rent</a>
-                        
-                    }
-                        </div>
-                    
-               
-                </div>
-                   
-             </div>
-
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarDescription)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarDescription)
+                </dd>
+            </dl>
         </div>
+        <div>
+            <a class="btn btn-dark" role="button" asp-action="Index">Go Back</a>
+        </div>
+    </div>
 </section>

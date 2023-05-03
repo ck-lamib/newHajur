@@ -4,51 +4,82 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>CarInfo</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CarImage)
-        </dt>
-        <dd class = "col-sm-10">
-            <img src="~/images/@Model.CarImage" alt="Car Image" height="100" width="100" />
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CarName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarBrand)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CarBrand)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarModel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CarModel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.RentPrice)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.RentPrice)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.is_available)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.is_available)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<section class="bg0 p-t-23 p-b-140 mt-5">
+    <div class="container">
+        <div class="p-b-10">
+            <h4 class="ltext-103 cl5 text-dark ">
+                Details
+            </h4>
+
+            <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+            <dl class="row">
+                <dt class="col-sm-2 text-dark">
+                    Car Image
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    <img src="@Html.DisplayFor(model => model.CarImage)" alt="Car Image" height="200" width="200" />
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarName)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarName)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarBrand)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarBrand)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarModel)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarModel)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarNumber)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarNumber)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.RentPrice)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.RentPrice)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.is_available)
+                </dt>
+                @if (Model.is_available == true)
+                {
+                    <dd class="col-sm-10 text-dark">
+
+                        Available
+                    </dd>
+                }
+                else
+                {
+                    <dd class="col-sm-10 text-dark">
+
+                        Not Available
+                    </dd>
+                }
+
+
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarDescription)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarDescription)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a class="btn btn-dark" role="button" asp-action="Edit" asp-route-id="@Model?.id">Edit</a>
+            <a class="btn btn-dark" role="button" asp-action="Index">Go Back</a>
+        </div>
+    </div>
+</section>

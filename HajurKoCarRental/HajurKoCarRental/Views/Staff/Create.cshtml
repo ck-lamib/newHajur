@@ -1,51 +1,57 @@
 ﻿@model RegisterViewModel
 
-<h1>Create Staff Member</h1>
 
 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="FullName">First Name</label>
-        <input asp-for="FullName" class="form-control" />
-        <span asp-validation-for="FullName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Email">Email</label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Password">Password</label>
-        <input asp-for="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="ConfirmPassword">Confirm Password</label>
-        <input asp-for="ConfirmPassword" type="password" class="form-control" />
-        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Address">Address</label>
-        <input asp-for="Address" class="form-control" />
-        <span asp-validation-for="Address" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="PhoneNumber">Phone Number</label>
-        <input asp-for="PhoneNumber" class="form-control" />
-        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="role">Is Admin</label>
-        <input asp-for="role" type="radio" value="admin"/>
-    </div>
-    <div class="form-group">
-        <label asp-for="role">Is Staff</label>
-        <input asp-for="role" type="radio" value="staff" checked/>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-    </div>
-</form>
+<section class="bg0 p-t-23 p-b-130 mt-5">
+	<h1 class=" ltext-103 cl5 text-dark">Create Staff Member</h1>
+	<hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+	<form asp-action="Create" method="post">
+		<div class="form-group">
+			<label asp-for="FullName" class="control-label text-dark">First Name</label>
+			<input asp-for="FullName" class="form-control" />
+			<span asp-validation-for="FullName" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Email" class="control-label text-dark">Email</label>
+			<input asp-for="Email" class="form-control" />
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Password" class="control-label text-dark">Password</label>
+			<input asp-for="Password" type="password" class="form-control" />
+			<span asp-validation-for="Password" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="ConfirmPassword" class="control-label text-dark">Confirm Password</label>
+			<input asp-for="ConfirmPassword" type="password" class="form-control" />
+			<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Address" class="control-label text-dark">Address</label>
+			<input asp-for="Address" class="form-control" />
+			<span asp-validation-for="Address" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="PhoneNumber" class="control-label text-dark">Phone Number</label>
+			<input asp-for="PhoneNumber" class="form-control" />
+			<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+		</div>
+		<h4 class="p-t-10 text-dark" style="padding-bottom:10px">Select role for user</h4>
+		<div class="row">
+			<div class="col-1 form-group text-dark">
+				<label asp-for="role" class="control-label text-dark">Is Admin</label>
+				<input asp-for="role" type="radio" value="admin" />
+			</div>
+			<div class="col-11 form-group text-dark">
+				<label asp-for="role" class="control-label text-dark">Is Staff</label>
+				<input asp-for="role" type="radio" value="staff" checked />
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Create" class="btn btn-dark" />
+			<a asp-action="Index" class="btn btn-dark">Cancel</a>
+		</div>
+	</form>
+</section>

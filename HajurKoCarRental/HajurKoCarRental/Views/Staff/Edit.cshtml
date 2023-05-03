@@ -1,37 +1,53 @@
 ﻿@model RegisterViewModel
 
-<h1>Edit Staff Member</h1>
 
-<form asp-action="Edit" method="post">
-    @Html.AntiForgeryToken()
-    <input type="hidden" asp-for="Id" value="@Model.Id"/>
-    <div class="form-group">
-        <label asp-for="FullName">First Name</label>
-        <input asp-for="FullName" class="form-control" />
-        <span asp-validation-for="FullName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Email">Email</label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Address">Address</label>
-        <input asp-for="Address" class="form-control" />
-        <span asp-validation-for="Address" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="PhoneNumber">Phone Number</label>
-        <input asp-for="PhoneNumber" class="form-control" />
-        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label>Roles</label><br />
-        <input type="checkbox" asp-for="role" value="admin"/> Admin<br />
-        <input type="checkbox" asp-for="role" value="satff" checked/> Staff
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
-        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-    </div>
-</form>
+
+<section class="bg0 p-t-23 p-b-70 mt-5">
+	<h1 class="ltext-103 cl5 text-dark ">Edit Staff Member</h1>
+	<hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+	<form asp-action="Edit" method="post">
+		@Html.AntiForgeryToken()
+		<input type="hidden" asp-for="Id" value="@Model.Id" />
+		<div class="form-group">
+			<label asp-for="FullName" class="control-label text-dark">First Name</label>
+			<input asp-for="FullName" class="form-control" />
+			<span asp-validation-for="FullName" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Email" class="control-label text-dark">Email</label>
+			<input asp-for="Email" class="form-control" />
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Address" class="control-label text-dark">Address</label>
+			<input asp-for="Address" class="form-control" />
+			<span asp-validation-for="Address" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="PhoneNumber" class="control-label text-dark">Phone Number</label>
+			<input asp-for="PhoneNumber" class="form-control" />
+			<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<h4 class="ltext-50 cl5 text-dark ">Roles</h4><br />
+			<div class="row">
+				<div class="col-1 text-dark">
+					<input type="checkbox" asp-for="role" value="admin" /> Admin<br />
+				</div>
+				<div class="col-11 text-dark">
+					<input type="checkbox" asp-for="role" value="satff" checked /> Staff
+				</div>
+			</div>
+
+
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<input type="submit" value="Save" class="btn btn-dark" />
+			</div>
+			<div class="col-11">
+				<a class="btn btn-dark" role="button" asp-action="Index">Back</a>
+			</div>
+		</div>
+	</form>
+</section>

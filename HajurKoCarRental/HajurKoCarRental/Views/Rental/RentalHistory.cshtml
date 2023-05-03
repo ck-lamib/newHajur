@@ -4,23 +4,23 @@
     ViewData["Title"] = "Requested Rentals";
 }
 
-<h1>Your Rental History</h1>
+<h1 class="ltext-103 cl5 text-dark " >Rental History</h1>
 
 @if (Model.Count == 0)
 {
-    <p>No Rentals Found.</p>
+    <p class="ltext-95 cl5 text-dark ">No Rentals Found.</p>
 }
 else
 {
-    <table class="table">
+    <table class="table table-hover">
         <thead>
             <tr>
-                <th>User ID</th>
-                <th>Authorized By</th>
-                <th>Rental Date</th>
-                <th>Fee</th>
-                <th>Rental Status</th>
-                <th>Car Name</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">User ID</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Authorized By</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Rental Date</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Fee</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Rental Status</th>
+                <th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">Car Name</th>
                 <th></th>
             </tr>
         </thead>
@@ -28,36 +28,36 @@ else
             @foreach (var rental in Model)
             {
                 <tr>
-                    <td>@rental.UserID</td>
-                    <td>@rental.AuthorizedBy</td>
-                    <td>@rental.date</td>
-                    <td>@rental.Fee</td>
-                    <td>
+                    <td class="text-xs font-weight-bold mb-0">@rental.UserID</td>
+                    <td class="text-xs font-weight-bold mb-0">@rental.AuthorizedBy</td>
+                    <td class="text-xs font-weight-bold mb-0">@rental.date</td>
+                    <td class="text-xs font-weight-bold mb-0">@rental.Fee</td>
+                    <td class="text-xs font-weight-bold mb-0">
                         @if (rental.RentalStatus == 0)
                         {
 
-                            <span>Requested</span>
+                            <span class="text-xs font-weight-bold mb-0">Requested</span>
                         }
                         else if (rental.RentalStatus == 1)
                         {
 
-                            <span>Approved</span>
+                            <span class="text-xs font-weight-bold mb-0">Approved</span>
                         }
                         else if (rental.RentalStatus == 2)
                         {
 
-                            <span>Returned</span>
+                            <span class="text-xs font-weight-bold mb-0">Returned</span>
                         }
-                        
+
                     </td>
-                    <td>@rental.CarInfo.CarName</td>
+                    <td class="text-xs font-weight-bold mb-0">@rental.CarInfo.CarName</td>
                     <td>
-                        @if(rental.RentalStatus == 0 || rental.RentalStatus == 1)
+                        @if (rental.RentalStatus == 0 || rental.RentalStatus == 1)
                         {
-                            <a asp-action="Cancel" asp-route-id="@rental.Id">Cancel Rent</a>
-                            
+                            <a class="btn btn-dark" asp-action="Cancel" asp-route-id="@rental.Id">Cancel Rent</a>
+
                         }
-                        
+
                     </td>
                 </tr>
             }
