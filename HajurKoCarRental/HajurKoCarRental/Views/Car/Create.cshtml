@@ -1,0 +1,85 @@
+﻿@model HajurKoCarRental.Models.CarInfo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<section class="bg0 p-t-23 p-b-130 mt-5">
+    <div class="container">
+
+        <h1 class=" ltext-103 cl5 text-dark">Create</h1>
+        <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+        <div class="row card-body">
+            <div class="col-md-4">
+                <form asp-action="Create" class="forms-sample pt-md-4">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger" enctype="multipart/form-data"></div>
+                   
+                    <div class="form-group">
+                        <label asp-for="CarImage" class="control-label text-dark"></label>
+                        <input asp-for="CarImage" class="form-control" placeholder="Car Image link" />
+                        <span asp-validation-for="CarImage" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CarName" class="control-label text-dark"></label>
+                        <input asp-for="CarName" class="form-control" placeholder="Enter Car Name" />
+                        <span asp-validation-for="CarName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CarBrand" class="control-label text-dark"></label>
+                        <input asp-for="CarBrand" class="form-control" placeholder="Brand" />
+                        <span asp-validation-for="CarBrand" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CarModel" class="control-label text-dark"></label>
+                        <input asp-for="CarModel" class="form-control" placeholder="Model" />
+                        <span asp-validation-for="CarModel" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CarNumber" class="control-label text-dark"></label>
+                        <input asp-for="CarNumber" class="form-control" placeholder="Number" />
+                        <span asp-validation-for="CarNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CarDescription" class="control-label text-dark"></label>
+                        <input asp-for="CarDescription" class="form-control" placeholder="Description" />
+                        <span asp-validation-for="CarDescription" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RentPrice" class="control-label text-dark"></label>
+                        <input asp-for="RentPrice" class="form-control" placeholder="RentPrice" />
+                        <span asp-validation-for="RentPrice" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group form-check">
+                        <label class="form-check-label text-dark">
+                            <input class="form-check-input text-dark" asp-for="is_available" /> @Html.DisplayNameFor(model => model.is_available)
+                        </label>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <input type="submit" value="Create" class="btn btn-dark" />
+                        </div>
+                        <div class="col-9">
+                            <a class="btn btn-dark" role="button" asp-action="Index">Back</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

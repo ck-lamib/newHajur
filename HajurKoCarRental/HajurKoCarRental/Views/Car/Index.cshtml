@@ -1,0 +1,175 @@
+﻿@model IEnumerable<HajurKoCarRental.Models.CarInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@*
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/CRUD.css" asp-append-version="true" />
+</head>
+<body>
+
+<h1>Index</h1>
+
+    <button type="button" class="btn btn-outline-sucess" onclick="location.href='@Url.Action("Create")'">Create New</button>
+
+
+
+    <div>
+        <a asp-action="CarAvailable" class="btn btn-outline-primary">Car Available</a>
+        <a asp-action="CarOnRent" class="btn btn-outline-primary">Car on Rent</a>
+        <a asp-action="FrequentlyRentedCars" class="btn btn-outline-primary">Frequently Rented Cars</a>
+        <a asp-action="NotFrequentlyRentedCars" class="btn btn-outline-primary">Not Frequently Rented Cars</a>
+    </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CarImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarName)
+            </th>
+            <th>
+               @Html.DisplayNameFor(model => model.CarBrand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RentPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.is_available)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/@item.CarImage" alt="Car Image" height="100" width="100"/>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CarName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CarBrand)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CarModel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RentPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.is_available)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                    </td>
+                </tr>
+            }
+
+    </tbody>
+</table>
+
+</body>
+</html>*@
+
+
+
+<section class="bg0 p-t-23 p-b-140 mt-5">
+	<div class="container">
+
+		<br />
+		<br />
+		<div class="p-b-10">
+			<div class="row m-b-15">
+				<div class="col-10">
+					<h4 class="ltext-103 cl5 text-dark ">
+						Our Cars
+					</h4>
+				</div>
+				<div class="col-2">
+					<button type="button" class="btn btn-dark" onclick="location.href='@Url.Action("Create")'">Create New</button>
+				</div>
+			</div>
+
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							@Html.DisplayNameFor(model => model.CarImage)
+						</th>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							@Html.DisplayNameFor(model => model.CarName)
+						</th>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							@Html.DisplayNameFor(model => model.CarModel)
+						</th>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							@Html.DisplayNameFor(model => model.RentPrice)
+						</th>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							@Html.DisplayNameFor(model => model.is_available)
+						</th>
+						<th class="text-uppercase text-secondary text-xxx font-weight-bolder opacity-10">
+							Action
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						@*var value = @Html.DisplayFor(modelItem => item.is_available);*@
+						<tr>
+							<td>
+								<img src="@Html.DisplayFor(model => item.CarImage)" alt="Car Image" height="100" width="100" />
+							</td>
+							<td class="text-xs font-weight-bold mb-0">
+								@Html.DisplayFor(modelItem => item.CarName)
+							</td>
+							<td class="text-xs font-weight-bold mb-0">
+								@Html.DisplayFor(modelItem => item.CarModel)
+							</td>
+							<td class="text-xs font-weight-bold mb-0">
+								@Html.DisplayFor(modelItem => item.RentPrice)
+							</td>
+
+							@if (@item.is_available == true)
+							{
+								<td class="text-xs font-weight-bold mb-0">
+									Available
+								</td>
+							}
+							else
+							{
+								<td class="text-xs font-weight-bold mb-0">
+									Not Available
+								</td>
+							}
+
+							<td>
+								<a class="btn btn-dark" role="button" asp-action="Edit" asp-route-id="@item.id">Edit</a>
+								<a class="btn btn-dark" role="button" asp-action="Details" asp-route-id="@item.id">Details</a>
+								<a class="btn btn-dark" role="button" asp-action="Delete" asp-route-id="@item.id">Delete</a>
+							</td>
+						</tr>
+					}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>

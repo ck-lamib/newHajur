@@ -1,0 +1,100 @@
+﻿@model HajurKoCarRental.Models.CarInfo
+
+@{
+    ViewData["Title"] = "Car Detail Page";
+}
+
+
+
+
+
+    <!-- Product -->
+    <section class="bg0 p-t-23 p-b-140 mt-5">
+        <div class="container">
+            <div class="p-b-10">
+                
+               <div class="row isotope-grid mt-5">
+                    
+                        <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+                            <!-- Block2 -->
+                            <div class="block2">
+                                <div class="block2-pic hov-img0">
+                                    <img class="product-img" src="@Model.CarImage" alt="IMG-PRODUCT">
+                                    @*<div class="example-overlay">
+                                        @if(car.isAvailable == true){
+                                            if (car.isRented == true)
+                                            {
+                                                <h5>
+                                                    <span class="badge badge-danger my-2 mr-2">Currently Rented</span>
+                                                </h5>
+                                            }
+                                            else
+                                            {
+                                                <h5>
+                                                    <span class="badge badge-warning my-2 mr-2">Currently Available</span>
+                                                </h5>
+                                            }
+                                        }
+                                        
+                                        else
+                                        {
+                                            <h5>
+                                                <span class="badge badge-success my-2 mr-2">Comming Soon</span>
+                                            </h5>
+                                        }
+
+                                    </div>*@
+                                </div>
+
+                                <div class="block2-txt flex-w flex-t p-t-14">
+                                    <div class="block2-txt-child1 flex-col-l ">
+                                        <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                            @Model.CarName
+                                        </a>
+
+                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
+                                    Car Brand: @Html.DisplayFor(modelItem => Model.CarBrand)
+                                        </span>
+
+                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
+                                    Car Model: @Model.CarModel
+                                        </span>
+                                        
+
+                                        <span class="stext-118 cl3 trans-04 js-name-b2 p-b-6">
+                                    Car Number: @Model.CarNumber
+                                        </span>
+
+                                        <span class="stext-105 cl3">
+                                    Rent Price: NRS. @Model.RentPrice
+                                         </span>
+                                <span class="stext-105 cl3">
+                                   Car Description: NRS. @Model.CarDescription
+                                </span>
+                                <span class="stext-105 cl3">
+                                    Car Description: NRS. @Model.is_available
+                                </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                    @if (Model.is_available)
+                    {
+                        <a href="@Url.Action("Rent", "Rental", new { id = Model.id })" class="btn btn-outline-success">Rent</a>
+
+                    }
+                    else
+                    {
+
+                        <a href="@Url.Action("Rent", "CarRent", new { id = Model.id })" class="btn btn-outline-success" aria-disabled="true">Rent</a>
+                        
+                    }
+                        </div>
+                    
+               
+                </div>
+                   
+             </div>
+
+        </div>
+</section>

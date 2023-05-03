@@ -1,0 +1,147 @@
+﻿@model HajurKoCarRental.Models.CarInfo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4 class="ltext-103 cl5 text-dark ">
+	Edit
+</h4>
+
+<section class="bg0 p-t-23 p-b-140 mt-5">
+	<div class="container">
+
+		<div class="p-b-10">
+			
+			<hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+			<div class="row">
+				<div class="col-md-4">
+					<form asp-action="Edit">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<input type="hidden" asp-for="id" />
+						<div class="form-group">
+							<label asp-for="CarImage" class="control-label text-dark"></label>
+							<input type="text" asp-for="CarImage" class="form-control" />
+							<span asp-validation-for="CarImage" class="text-danger"></span>
+						</div>
+
+						<div class="form-group">
+							<label asp-for="CarName" class="control-label text-dark"></label>
+							<input asp-for="CarName" class="form-control" />
+							<span asp-validation-for="CarName" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="CarBrand" class="control-label text-dark"></label>
+							<input asp-for="CarBrand" class="form-control" />
+							<span asp-validation-for="CarBrand" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="CarModel" class="control-label text-dark"></label>
+							<input asp-for="CarModel" class="form-control" />
+							<span asp-validation-for="CarModel" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="CarNumber" class="control-label text-dark"></label>
+							<input asp-for="CarNumber" class="form-control" />
+							<span asp-validation-for="CarNumber" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="CarDescription" class="control-label text-dark"></label>
+							<input asp-for="CarDescription" class="form-control" />
+							<span asp-validation-for="CarDescription" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="RentPrice" class="control-label text-dark"></label>
+							<input asp-for="RentPrice" class="form-control" />
+							<span asp-validation-for="RentPrice" class="text-danger"></span>
+						</div>
+
+						<div class="form-group form-check">
+							<label class="form-check-label text-dark">
+								<input class="form-check-input" asp-for="is_available!" /> @Html.DisplayNameFor(model => model.is_available)
+							</label>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-3">
+								<input type="submit" value="Save" class="btn btn-dark" />
+							</div>
+							<div class="col-9">
+								<a class="btn btn-dark" role="button" asp-action="Index">Back</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+
+
+
+@*
+
+
+<h1>Edit</h1>
+
+<h4>CarInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="CarImage" class="control-label"></label>
+                <input type="file" asp-for="CarImage" class="form-control" />
+                <span asp-validation-for="CarImage" class="text-danger"></span>
+            </div>
+            <div>
+                @if (!string.IsNullOrEmpty(Model.CarImage))
+                {
+                    <img src="~/images/@Model.CarImage" alt="Car Image" height="100" width="100"/>
+                }
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CarName" class="control-label"></label>
+                <input asp-for="CarName" class="form-control" />
+                <span asp-validation-for="CarName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarBrand" class="control-label"></label>
+                <input asp-for="CarBrand" class="form-control" />
+                <span asp-validation-for="CarBrand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarModel" class="control-label"></label>
+                <input asp-for="CarModel" class="form-control" />
+                <span asp-validation-for="CarModel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RentPrice" class="control-label"></label>
+                <input asp-for="RentPrice" class="form-control" />
+                <span asp-validation-for="RentPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="is_available" /> @Html.DisplayNameFor(model => model.is_available)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
