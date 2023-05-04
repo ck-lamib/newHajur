@@ -83,7 +83,7 @@ namespace HajurKoCarRental.Controllers
                 Rental rental = new Rental();
                 // Update rental properties
                 rental.UserID = user.Id;
-                rental.Fee = CalculateRentalFee(id, user.is_RegularCustomer, User.IsInRole(UserRoles.Staff));
+                rental.Fee = CalculateRentalFee(id, user.is_RegularCustomer, User.IsInRole(UserRoles.Staff), User.IsInRole(UserRoles.Admin));
                 rental.RentalStatus = 0;
                 rental.CarID = id;
                 rental.AuthorizedBy = "none";
@@ -102,7 +102,7 @@ namespace HajurKoCarRental.Controllers
             return View();
         }
 
-        private decimal CalculateRentalFee(int carId, bool isRegularCustomer, bool isStaff)
+        private decimal CalculateRentalFee(int carId, bool isRegularCustomer, bool isStaff, bool isAdmin)
         {
             var car = _dbContext.CarInfo.FirstOrDefault(c => c.id == carId);
 
@@ -112,15 +112,15 @@ namespace HajurKoCarRental.Controllers
             }
 
             decimal rentalFee = car.RentPrice;
-
+            // 10% discount for regular customers
             if (isRegularCustomer)
             {
-                rentalFee *= 0.9m; // 10% discount for regular customers
+                rentalFee *= 0.9m;
             }
-
-            if (isStaff)
+            // 25% discount for staff members
+            if (isStaff || isAdmin)
             {
-                rentalFee *= 0.75m; // 25% discount for staff members
+                rentalFee *= 0.75m; 
             }
 
             return rentalFee;

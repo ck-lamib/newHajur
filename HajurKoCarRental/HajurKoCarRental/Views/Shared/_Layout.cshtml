@@ -41,14 +41,26 @@
 
     @RenderSection("AddCustomStyles", false)
     @*copiedend*@
+    <style>
+        .navbar-nav > li {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .navbar-default .navbar-nav > .active > a {
+            background: #000000;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
-<body>
+<body >
     <header>
-        <nav class="navbar hover-shadow navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark hover-shadow border-bottom box-shadow mb-0">
+        <nav class="navbar hover-shadow navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark hover-shadow border-bottom box-shadow m-8" style="height:80px;">
 
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HajurKoCarRental</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hajur Ko Car Rental</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,14 +74,14 @@
                             </li>
                         }
                         @* <li>
-                            <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px;" asp-area="Identity" asp-page="/Account/Login">LOGIN</a>
+                        <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px;" asp-area="Identity" asp-page="/Account/Login">LOGIN</a>
                         </li>
                         <li>
-                            <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px; margin-left:10px" asp-area="Identity" asp-page="/Account/Register">RESGISTER</a>
+                        <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px; margin-left:10px" asp-area="Identity" asp-page="/Account/Register">RESGISTER</a>
                         </li>*@
                         @if (User.IsInRole(UserRoles.Admin))
                         {
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" asp-controller="Role" asp-action="Index">Role</a>
                             </li>
@@ -77,7 +89,7 @@
                                 <a class="nav-link text-light" asp-area="" asp-controller="Staff" asp-action="Index">Manage_Staff</a>
                             </li>
 
-                          
+
                         }
 
 
@@ -97,7 +109,7 @@
 
                         }
 
-                       
+
 
                         @if (User.IsInRole(UserRoles.Admin) || User.IsInRole(UserRoles.Staff) || User.IsInRole(UserRoles.Customer))
                         {
@@ -113,23 +125,26 @@
 
                     </ul>
                 </div>
-                <partial name="_LoginPartial"/>
+                <partial name="_LoginPartial" />
             </div>
         </nav>
     </header>
-    <div class="">
-        <main role="main" class="pb-0">
-            @RenderBody()
 
-            @RenderSection("AddCustomScripts", false)
-        </main>
+    <div style=" min-height: 100vh; display: flex; flex-direction: column;">
+        <div class="container" id="hide-container">
+            <main role="main" class="pb-0">
+                @RenderBody()
+
+                @RenderSection("AddCustomScripts", false)
+            </main>
+        </div>
     </div>
 
 
     <!-- Footer -->
     <footer class="bg3 p-t-60 p-b-32">
         <div class="container ">
-            <div class="p-t-40">
+            <div class="p-t-0">
 
                 <p class="stext-107 cl6 text-center" style="letter-spacing:1px">
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by HajurKoCarRental System

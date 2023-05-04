@@ -11027,11 +11027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khatt\\Downloads\\arjun\\HajurKoCarRental\\HajurKoCarRental\\HajurKoCarRental.csproj",
+      "projectUniqueName": "C:\\Users\\khatt\\Downloads\\AD_CW\\HajurKoCarRental\\HajurKoCarRental\\HajurKoCarRental.csproj",
       "projectName": "HajurKoCarRental",
-      "projectPath": "C:\\Users\\khatt\\Downloads\\arjun\\HajurKoCarRental\\HajurKoCarRental\\HajurKoCarRental.csproj",
+      "projectPath": "C:\\Users\\khatt\\Downloads\\AD_CW\\HajurKoCarRental\\HajurKoCarRental\\HajurKoCarRental.csproj",
       "packagesPath": "C:\\Users\\khatt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khatt\\Downloads\\arjun\\HajurKoCarRental\\HajurKoCarRental\\obj\\",
+      "outputPath": "C:\\Users\\khatt\\Downloads\\AD_CW\\HajurKoCarRental\\HajurKoCarRental\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

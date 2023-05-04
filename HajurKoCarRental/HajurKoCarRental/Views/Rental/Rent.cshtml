@@ -5,48 +5,77 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Rent Car</h2>
 
-<div>
-    <h4>Car Details</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CarName)
-        </dd>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarImage)
-        </dt>
-        <dd class="col-sm-10">
-            <img src="@Model.CarImage" alt="Car Image" />
-        </dd>
+<section class="bg0 p-t-23 p-b-140 mt-5">
+    <div class="container">
+        <div class="p-b-10">
+            <h4 class="ltext-103 cl5 text-dark ">
+                Car Details
+            </h4>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.RentPrice)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.RentPrice)
-        </dd>
-    </dl>
-</div>
+            <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+            <div class="col-sm-12 text-center">
+                <img src="@Model.CarImage" alt="@Model.CarImage Image" />
+            </div>
+            <dl class="row">
 
-<div>
-    <h4>Rental Information</h4>
-    <hr />
-    <form asp-action="Rent" method="post">
-        <input type="hidden" asp-for="id" />
-        <div class="form-group">
-            <label class="control-label">Rental Date</label>
-            <input class="form-control" name="date" type="date" required />
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarName)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarName)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarBrand)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarBrand)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarModel)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarModel)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarNumber)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarNumber)
+                </dd>
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.RentPrice)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.RentPrice)
+                </dd>
 
-            <input type="hidden" name="@Model.id" />
 
-            
+                <dt class="col-sm-2 text-dark">
+                    @Html.DisplayNameFor(model => model.CarDescription)
+                </dt>
+                <dd class="col-sm-10 text-dark">
+                    @Html.DisplayFor(model => model.CarDescription)
+                </dd>
+            </dl>
         </div>
-        <button type="submit" class="btn btn-primary">Rent Car</button>
-    </form>
-</div>
+    </div>
+    <h1 class=" ltext-103  text-dark">Choose Date for rent</h1>
+    <hr class=" text-dark " style="height:3px; width:100%; border-width:0;" />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Rent" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label text-dark">Rent date</label>
+                    <input type="date" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Rent Car" class="btn btn-dark" />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

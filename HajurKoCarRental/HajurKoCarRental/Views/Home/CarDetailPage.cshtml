@@ -5,7 +5,7 @@
 }
 
 
-<section class="bg0 p-t-23 p-b-140 mt-5">
+<section class="bg0 p-t-23 p-b-140 mt-5" >
    
 
     <div class="container">
@@ -81,6 +81,15 @@
         </div>
         <div>
             <a class="btn btn-dark" role="button" asp-action="Index">Go Back</a>
+             @if(Model.is_available){
+
+                <a href="@Url.Action("Rent", "Rental", new { id =Model.id})" class="btn btn-dark" role="button">Rent</a>
+            }
+            else
+            {
+                <button href="@Url.Action("Rent", "Rental", new { id =Model.id})" class="btn btn-dark"  disabled>Rent(Not Available)</button>
+                
+            }
         </div>
     </div>
 </section>

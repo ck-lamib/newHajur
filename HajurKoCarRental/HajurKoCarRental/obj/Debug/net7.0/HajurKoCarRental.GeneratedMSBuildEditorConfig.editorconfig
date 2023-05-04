@@ -9,257 +9,257 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HajurKoCarRental
 build_property.RootNamespace = HajurKoCarRental
-build_property.ProjectDir = C:\Users\khatt\Downloads\arjun\HajurKoCarRental\HajurKoCarRental\
+build_property.ProjectDir = C:\Users\khatt\Downloads\AD_CW\HajurKoCarRental\HajurKoCarRental\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\khatt\Downloads\arjun\HajurKoCarRental\HajurKoCarRental
+build_property.MSBuildProjectDirectory = C:\Users\khatt\Downloads\AD_CW\HajurKoCarRental\HajurKoCarRental
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyRGFtYWdlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyRGFtYWdlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Details.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyRGFtYWdlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyRGFtYWdlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/CarDamage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyRGFtYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Car/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Car/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Car/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Car/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Car/Details.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Car/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Car/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Car/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Car/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Car/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Home/CarDetailPage.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Home/CarDetailPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJEZXRhaWxQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Home/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Home/Privacy.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUmVudGFsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUmVudGFsXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Details.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUmVudGFsXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUmVudGFsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/ManageRental/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUmVudGFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Notification/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Notification/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Notification/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Notification/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Notification/Details.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Notification/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Notification/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Notification/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Notification/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Notification/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Offer/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Offer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Offer/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Offer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Offer/Details.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Offer/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Offer/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Offer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Offer/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Offer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Rental/Cancel.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Rental/Cancel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXENhbmNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Rental/Rent.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Rental/Rent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Rental/RentalHistory.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Rental/RentalHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJlbnRhbEhpc3RvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Rental/UploadDocuments.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Rental/UploadDocuments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFVwbG9hZERvY3VtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Role/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Role/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Role/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Role/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Role/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Role/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Shared/Error.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Staff/Create.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Staff/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Staff/Delete.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Staff/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Staff/Edit.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Staff/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Staff/Index.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/_ViewImports.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/_ViewStart.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khatt/Downloads/arjun/HajurKoCarRental/HajurKoCarRental/Views/Shared/_Layout.cshtml]
+[C:/Users/khatt/Downloads/AD_CW/HajurKoCarRental/HajurKoCarRental/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kmjzuyetvi
